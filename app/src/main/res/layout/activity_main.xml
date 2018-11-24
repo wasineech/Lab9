@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textfirst"
+        android:layout_marginTop="89dp"
+        android:text="ID :"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textid"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="58dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textfirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="162dp"
+        android:text="FirstName :"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/first"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textfirst"
+        android:layout_toEndOf="@+id/textfirst"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textlast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textid"
+        android:layout_centerVertical="true"
+        android:text="LastName :"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/last"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="24dp"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="143dp"
+        android:text="send" />
+
+</RelativeLayout>
